@@ -1,26 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main ()
+int main()
 {
-	int num1, num2, soma, sub, mult, divi;
-	
-	printf("Calculadora em C\n ");
-	printf("Coloque dois numeros para serem feitas as operações:\n");
-	scanf("%i%i",&num1,&num2);
-	
-	soma = num1 + num2;
-	sub = num1 / num2;
-	mult = num1 * num2;
-	divi = num1 - num2;
-	
-	printf("O resultado da operação é: %i\n", soma );
-		printf("O resultado da operação é: %i\n", sub );
-			printf("O resultado da operação é: %i\n", mult );
-				printf("O resultado da operação é: %i\n", divi );
-	
-				  return 0;
-}
+setlocale(LC_ALL, "Portuguese");
+int numero1,numero2, continuar;
+int operacao;
+do{
+
+    printf("Seja bem vindo a calculadora em C do PH. \n");
+    printf("Selecione o tipo de operação:\n ");
+    printf("1 - Adição + \n");
+    printf("2 - Subtração - \n");
+    printf("3 - Multiplicação * \n");
+    printf("4 - Divisão / \n ");
+    printf("0 - Sair:\n ");
+    printf("Escolha aqui o seu tipo de operação: \n");
+    scanf("%d",&operacao);
+
+    if (operacao != 0){
+
+
+    printf("Escolha o primeiro numero: \n ");
+    scanf("%d",&numero1);
+    printf("Escolha o segundo numero: \n ");
+    scanf("%d",&numero2);
+
+    if (operacao == 1){
+        printf("Resultado : %d\n",numero1 + numero2);
+    }else if(operacao == 2){
+        printf("Resultado : %d\n",numero1 - numero2);
+    }else if(operacao == 3){
+        printf("Resultado : %d\n",numero1 * numero2);;
+    }else if(operacao == 4){
+        printf("Resultado : %d\n",(float)numero1 / numero2);;
+    }else{
+
+        printf("Resultado não foi obtido");
+    }
+    }
+}while (operacao != 0);
+    return 0;
+    }
+
 
