@@ -5,8 +5,8 @@
 int main()
 {
 setlocale(LC_ALL, "Portuguese");
-int numero1,numero2, continuar;
-int operacao;
+float numero1,numero2, continuar;
+float operacao;
 do{
 
     printf("Seja bem vindo a calculadora em C do PH. \n");
@@ -17,24 +17,24 @@ do{
     printf("4 - Divisão / \n ");
     printf("0 - Sair:\n ");
     printf("Escolha aqui o seu tipo de operação: \n");
-    scanf("%d",&operacao);
+    scanf("%f",&operacao);
 
     if (operacao != 0){
 
 
     printf("Escolha o primeiro numero: \n ");
-    scanf("%d",&numero1);
+    scanf("%f",&numero1);
     printf("Escolha o segundo numero: \n ");
-    scanf("%d",&numero2);
+    scanf("%f",&numero2);
 
     if (operacao == 1){
-        printf("Resultado : %d\n",numero1 + numero2);
+        printf("Resultado : %f\n",numero1 + numero2);
     }else if(operacao == 2){
-        printf("Resultado : %d\n",numero1 - numero2);
+        printf("Resultado : %f\n",numero1 - numero2);
     }else if(operacao == 3){
-        printf("Resultado : %d\n",numero1 * numero2);;
+        printf("Resultado : %f\n",numero1 * numero2);;
     }else if(operacao == 4){
-        printf("Resultado : %d\n",(float)numero1 / numero2);;
+        printf("Resultado : %.2f\n",(float)numero1 / numero2);;
     }else{
 
         printf("Resultado não foi obtido");
