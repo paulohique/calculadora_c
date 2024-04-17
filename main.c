@@ -10,22 +10,22 @@ float operacao;
 do{
 
     printf("Seja bem vindo a calculadora em C do PH. \n");
-    printf("Selecione o tipo de operaÁ„o:\n ");
-    printf("1 - AdiÁ„o + \n");
-    printf("2 - SubtraÁ„o - \n");
-    printf("3 - MultiplicaÁ„o * \n");
-    printf("4 - Divis„o / \n ");
-    printf("0 - Sair:\n ");
-    printf("Escolha aqui o seu tipo de operaÁ„o: \n");
-    scanf("%f",&operacao);
+        printf("Selecione o tipo de opera√ß√£o:\n ");
+            printf("1 - Adi√ß√£o + \n");
+            printf("2 - Subtra√ß√£o - \n");
+            printf("3 - Multiplica√ß√£o * \n");
+            printf("4 - Divis√£o / \n ");
+            printf("0 - Sair:\n ");
+        printf("Escolha aqui o seu tipo de opera√ß√£o: \n");
+            scanf("%f",&operacao);
 
     if (operacao != 0){
 
 
     printf("Escolha o primeiro numero: \n ");
-    scanf("%f",&numero1);
+        scanf("%f",&numero1);
     printf("Escolha o segundo numero: \n ");
-    scanf("%f",&numero2);
+        scanf("%f",&numero2);
 
     if (operacao == 1){
         printf("Resultado : %f\n",numero1 + numero2);
@@ -37,7 +37,7 @@ do{
         printf("Resultado : %.2f\n",(float)numero1 / numero2);;
     }else{
 
-        printf("Resultado n„o foi obtido");
+        printf("Resultado n√£o foi obtido");
     }
     }
 }while (operacao != 0);
